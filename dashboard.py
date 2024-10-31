@@ -36,7 +36,8 @@ Data dari bike_dataset memiliki beberapa kolom yaitu:
     """)
 
 st.sidebar.title("Dashboard Bike Sharing Data :bike:")
-select = st.sidebar.radio("Select page", ["About Dataset :newspaper:", "Perkembangan angka pengguna :chart_with_upwards_trend:", "Pengaruh hari kerja :office_worker:", "Pengaruh cuaca dan musim :sun_small_cloud:", "Angka pengguna setiap jam :clock8:", "Additional analysis"])
+st.sidebar.subheader("Scroll to see the :blue[graphs]")
+select = st.sidebar.radio("Select data", ["About Dataset :newspaper:", "Perkembangan angka pengguna :chart_with_upwards_trend:", "Pengaruh hari kerja :office_worker:", "Pengaruh cuaca dan musim :sun_small_cloud:", "Angka pengguna setiap jam :clock8:", "Additional analysis"])
 
 if select == "Pengaruh hari kerja :office_worker:":
     exec(open("workingday.py").read())
