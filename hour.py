@@ -27,6 +27,4 @@ def show_hour():
 
     st.pyplot(fig)
 
-    st.write("test")
-
 show_hour()
